@@ -3,17 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Diagrama de Estructura de Repositorio – IRRBB Analyzer</title>
-</head>
-<body>
-    <h1>Diagrama de Estructura de Repositorio – IRRBB Analyzer</h1>
-    <p>Versión completa del diagrama de estructura de repositorio del motor IRRBB Analyzer.</p>
 
-    <!-- Contenedor con scroll horizontal -->
-    <div style="width: 100%; overflow-x: auto; border: 1px solid #ccc;">
-        <!-- Aquí fijamos un ancho grande para que no se reduzca -->
-        <img src="EstructuraRepo.svg"
-             alt="Diagrama de estructura de repositorio IRRBB Analyzer"
-             style="width: 2500px; height: auto; display: block;">
+    <!-- Importar TIPOGRAFÍA INTER -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: scroll !important;
+        }
+
+        /* Tamaño moderado grande */
+        img.repo-diagram {
+            width: 3500px !important;
+            height: auto !important;
+            display: block;
+        }
+
+        html, body {
+            min-width: 3500px !important;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-slate-900 text-slate-100 flex flex-col items-center">
+
+    <header class="mt-20 mb-10 text-center">
+        <h1 class="text-5xl font-bold tracking-wide">
+            Diagrama de Estructura de Repositorio – IRRBB Analyzer
+        </h1>
+
+        <p class="mt-4 text-slate-300 text-xl">
+            Versión completa del diagrama de estructura de repositorio del motor IRRBB Analyzer.
+        </p>
+    </header>
+
+    <div class="mt-6 mb-6 shadow-2xl rounded-xl p-6 bg-slate-800 border border-slate-700">
+        <img src="EstructuraRepo.svg" class="repo-diagram" alt="Diagrama del repositorio">
     </div>
+
+    <p class="text-slate-400 text-lg mb-16">
+        Desplázate horizontalmente para explorar el diagrama completo.
+    </p>
+
 </body>
 </html>
